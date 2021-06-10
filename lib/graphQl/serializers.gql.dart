@@ -1,6 +1,12 @@
 import 'package:built_collection/built_collection.dart';
 import 'package:built_value/serializer.dart';
 import 'package:built_value/standard_json_plugin.dart' show StandardJsonPlugin;
+import 'package:flutter_graphql_todo_app/graphQl/create-todo.data.gql.dart'
+    show GcreateTodoData, GcreateTodoData_createTodo;
+import 'package:flutter_graphql_todo_app/graphQl/create-todo.req.gql.dart'
+    show GcreateTodoReq;
+import 'package:flutter_graphql_todo_app/graphQl/create-todo.var.gql.dart'
+    show GcreateTodoVars;
 import 'package:flutter_graphql_todo_app/graphQl/schema.schema.gql.dart'
     show
         GAddressInput,
@@ -68,6 +74,10 @@ final SerializersBuilder _serializersBuilder = _$serializers.toBuilder()
   GUpdateTodoInput,
   GUpdateUserInput,
   GUpload,
+  GcreateTodoData,
+  GcreateTodoData_createTodo,
+  GcreateTodoReq,
+  GcreateTodoVars,
   GtodosData,
   GtodosData_todos,
   GtodosData_todos_data,

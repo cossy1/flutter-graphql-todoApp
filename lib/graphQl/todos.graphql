@@ -1,0 +1,8 @@
+  query todos($options: PageQueryOptions){
+  todos(options: $options){
+ 		data{
+      title,
+      completed
+    }
+  }
+}
